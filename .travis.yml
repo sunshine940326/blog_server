@@ -12,10 +12,6 @@ cache:
 before_script:
 - git pull origin master
 
-
-script:
-- npm test
-
 after_success:
 - rsync av -e ssh stricthostkeychecking=no --exclude="node_modules"  b.text root@118.24.62.205:/home/test/server
 - pm2 restart all
