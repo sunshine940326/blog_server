@@ -1,0 +1,25 @@
+install:
+- npm install
+branches:
+  only:
+  - master
+language: node_js
+sudo: false
+node_js: stable
+cache:
+  directories:
+  - node_modules
+before_script:
+- git pull origin master
+
+
+script:
+- npm test
+
+after_success:
+- rsync av -e ssh stricthostkeychecking=no --exclude="node_modules"  app.js root@118.24.62.205:/home/test/server
+- pm2 restart all
+
+env:
+  global:
+  - GH_REF: github.com/sunshine940326/blog_server.git
