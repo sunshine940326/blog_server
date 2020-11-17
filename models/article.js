@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 
 // Schema
 const articleSchema = new Schema({
-  id: Number,
+  id: String,
   title: {                             // 标题
     type: String,
   },

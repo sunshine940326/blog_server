@@ -8,6 +8,6 @@ module.exports = {
   token: {
     secret: 'cherryblog',
     expires: '30d',
-    unlesses: [/^\/login/, /^\/createUser/]
+    unlesses: [/^\/login/, /^\/getArticleList/, /^\/getTagList/, /^\/updateArticle/, /^\/createArticleItem/]
   }
 }
