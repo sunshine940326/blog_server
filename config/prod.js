@@ -8,8 +8,8 @@ module.exports = {
     pwd:  ''
   },
   token: {
-    secret: '',
-    expires: '120',
-    unlesses: [/^\/login/]
+    secret: 'cherryblog',
+    expires: '30d',
+    unlesses: [/^\/login/, /^\/getArticleList/, /^\/getTagList/]
   }
 }
