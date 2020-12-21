@@ -8,7 +8,7 @@ module.exports = app => {
     return result = await ArticleController.create(ctx) 
   }
 
-  ArticleController.update = async ctx => {
+  ArticleController.updateActicale = async ctx => {
     return result = await ArticleController.updateById(ctx)
   }
 

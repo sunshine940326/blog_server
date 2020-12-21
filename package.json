@@ -9,19 +9,21 @@
   "devDependencies": {
     "body-parser": "^1.18.3",
     "cookies": "^0.7.2",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
     "jsonwebtoken": "^8.4.0",
     "koa": "^2.6.1",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
     "koa-unless": "^1.0.7",
     "koa2-cors": "^2.0.6",
-    "mongoose": "^5.3.8",
+    "mongoose": "^5.10.14",
     "mongoose-paginate": "^5.0.3"
   },
   "scripts": {
     "test": "",
     "prod": "NODE_ENV=production node app.js",
-    "dev": "NODE_ENV=develop node app.js"
+    "dev": "NODE_ENV=develop node app_local.js"
   },
   "author": "",
   "license": "ISC"
